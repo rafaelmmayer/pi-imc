@@ -1,2 +1,3 @@
 def calculo_imc():
-    pass
+    print('calculo_imc')
+    return 0

@@ -1,2 +1,3 @@
 def calculo_calorias():
-    pass
+    print('calculo_calorias')
+    return 0
