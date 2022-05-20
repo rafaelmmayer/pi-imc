@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(167, 213, 228);
+
+    /* centralizar section main */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 2.0rem;
+    top: 0;
+    background-color: #446841;
+    position:absolute;
+}
+
+body header h1 {
+    font-size: 1.2rem;
+    color:rgb(24, 24, 24);
+}
+
+body .main-content {
+    display: flex;
+}
+
+body .main-content .main-right img{
+    width: 30vw;
+    height: 60vh;
+
+    border-radius: 0px 16px 16px 0px;
+}
+
+body .main {
+    width: 30vw;
+    height: 60vh;
+
+    background-color: #d4fad3;
+    border-radius: 16px 0px 0px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+body .main h2 {
+    color: #446841;
+    text-shadow: 1px 3px 3px #ffffff;
+    font-weight: bold;
+}
+
+body .main form {
+    width: 20rem;
+    height: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem;
+}
+
+body .main form input{
+    margin-top: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    height: 40px;
+    padding: 10px;
+}
+
+body .main form .btn {
+    background-color: #6E986B;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+}
+
+body .main form .btn:hover {
+    background-color: #446841;
+    color: #FFF;
+    transition: 250ms;
+}
+
+body .main form input:nth-child(1) {
+    margin-top: 0;
+}
+
+/* ========================================== parte de calorias ======================================*/
+
+body .box-calorias {
+    margin-top: 4.5rem;
+    height: 15rem;
+    width: 60rem;
+    position: absolute;
+    display: inline-block;
+    display: flex;
+}
+
+body .calorias-content {
+    gap: 1.5rem;
+
+    width: 30vw;
+    height: 60vh;
+
+    background-color: #d4fad3;
+    border-radius: 16px 0px 0px 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+body .box-calorias img{
+    width: 30vw;
+    height: 60vh;
+
+    border-radius: 0px 16px 16px 0px;
+}
+
+body .calorias-content input {
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    height: 40px;
+    padding: 10px;
+}
+
+body .radios-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .radios-btns input {
+    margin-left: 0.5rem;
+}
+
+body #H {
+    margin-left: 0;
+}
+
+body .box-calorias .calorias-content h2 {
+    color: #446841;
+    text-shadow: 1px 3px 3px #ffffff;
+    font-weight: bold;
+}
+
+body .box-calorias .btn {
+    background-color: #6E986B;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container-resultado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    height: 130px;
+    width: 300px;
+    background-color: #FFF;
+}

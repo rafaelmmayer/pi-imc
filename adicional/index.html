@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário IMC</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Projeto de cálculo de IMC e Calorias, desenvolvido para a disciplina de Projeto Integrador. PUC-Campinas</h1>
+    </header>
+    <div class="box-geral">
+        <div class="main-content">
+            <section class="main">
+                <h2>Cálculo de IMC:</h2>
+                <form>
+                    <input id="inputAltura" type="number" step="0.01" min="0" placeholder="Digite sua altura">
+                    <input id="inputPeso" type="number" step="0.01" min="0" placeholder="Digite seu peso">
+                    <input id="btnCalculoImc" class="btn" pys-onClick="calcular_imc" value="Calcular">
+                </form>
+                <div class="container-resultado">
+                    <span id="spanResultadoImc"></span>
+                    <br>
+                    <span id="spanClassificacaoImc"></span>
+                </div>
+            </section>
+            <section class="main-right">
+                <img src="./images/imgPeso2.jpg" alt="A imagem mostra uma maça com uma fita métrica envolvendo-a, Uma balança, Uma Garrafa de água deitada, um bowl com alface e um altere">
+            </section>
+        </div>
+
+        <div class="box-calorias">
+            <section class="calorias-content">
+                <h2>Cálculo de Calorias:</h2>
+                <section class="input">
+                    <input id="inputIdade" type="number" step="1" min="0" placeholder="Digite sua idade">
+                    <div class="radios-btns">
+                        <input type="radio" name="sexos" id="H" value="H">
+                        <label for="H">Homem</label>
+                        <input type="radio" name="sexos" id="M" value="M">
+                        <label for="M">Mulher</label>
+                    </div>
+                </section>
+                <input id="btnCalculoCaloria" class="btn" pys-onClick="calcular_calorias" value="Calcular">
+                <div class="container-resultado">
+                    <span id="spanTotalCalorias"></span>
+                </div>
+            </section>
+            <img src="./images/imgPeso2.jpg" alt="A imagem mostra uma maça com uma fita métrica envolvendo-a, Uma balança, Uma Garrafa de água deitada, um bowl com alface e um altere">
+        </div>
+    </div>
+    <py-script src="./imc.py"></py-script>
+</body>
+</html>
