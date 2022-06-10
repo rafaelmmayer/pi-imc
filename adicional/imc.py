@@ -67,4 +67,18 @@ def calcular_calorias(*args, **kwargs):
     idade = int(document.getElementById('inputIdade').value)
     total_calorias = calculo_calorias(sexo, idade)
     pyscript.write('spanTotalCalorias', total_calorias)
-    
+
+
+def calcular_refeicao(*args, **kwargs):
+    refeicao = int(document.getElementById('inputRefeicao').value)
+    textRefeicao = document.getElementById('spanRefeicao').innerText
+    calorias_restante = 0
+    if textRefeicao:
+        float_refeicao = float(textRefeicao)
+        calorias_restante = float_refeicao - refeicao
+    else:
+        spanTotalCalorias = float(document.getElementById('spanTotalCalorias').innerText)
+        calorias_restante = spanTotalCalorias - refeicao
+    if calorias_restante < 0:
+        calorias_restante = 0
+    pyscript.write('spanRefeicao', calorias_restante)
