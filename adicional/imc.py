@@ -70,7 +70,7 @@ def calcular_calorias(*args, **kwargs):
 
 
 def calcular_refeicao(*args, **kwargs):
-    refeicao = int(document.getElementById('inputRefeicao').value)
+    refeicao = float(document.getElementById('inputRefeicao').value)
     textRefeicao = document.getElementById('spanRefeicao').innerText
     calorias_restante = 0
     if textRefeicao:
@@ -81,4 +81,5 @@ def calcular_refeicao(*args, **kwargs):
         calorias_restante = spanTotalCalorias - refeicao
     if calorias_restante < 0:
         calorias_restante = 0
-    pyscript.write('spanRefeicao', calorias_restante)
+    pyscript.write('spanRefeicao', round(calorias_restante, 2))
+    document.getElementById('inputRefeicao').value = ''
